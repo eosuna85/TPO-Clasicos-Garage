@@ -1,7 +1,7 @@
-const URL = "http://127.0.0.1:5000/"
+// const URL = "http://127.0.0.1:5000/"
 
         //Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
-        //const URL = "https://USUARIO.pythonanywhere.com/"
+        const URL = "https://eosuna85.pythonanywhere.com/"
         
 
         //Vue.createApp para crear nuestra aplicación Vue.

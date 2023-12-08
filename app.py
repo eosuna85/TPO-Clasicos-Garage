@@ -134,13 +134,15 @@ class Catalogo: # +Primero, se establece una conexión sin especificar la base d
 
 # !Programa Principal
 # +Verificación
-catalogo = Catalogo(host='localhost', user='root', password='Mango02324914*', database='miapp')
+# catalogo = Catalogo(host='localhost', user='root', password='Mango02324914*', database='miapp')
+catalogo = Catalogo(host='eosuna85.mysql.pythonanywhere-services.com', user='eosuna85', password='Mango02324914*', database='eosuna85$miapp')
+
 
 # !Carpeta para guardar las imagenes
-RUTA_DESTINO = './static/imagenes/'
+# RUTA_DESTINO = './static/imagenes/'
 
 #+Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
-#+RUTA_DESTINO = '/home/USUARIO/mysite/static/imagenes'
+RUTA_DESTINO = '/home/eosuna85/mysite/static/imagenes'
 
 # # +Agregamos productos a la tabla
 # catalogo.agregar_auto(123, 'Ford', 1, 13000, 'Falcon.jpg', 'Falcon', 1980, 140000, '6 Cilindros', 'Manual')
