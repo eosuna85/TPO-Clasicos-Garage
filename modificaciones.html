@@ -42,8 +42,7 @@
                     alt="Imagen del producto" style="max-width: 200px;"> -->
                 
                 <!-- Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere -->
-                <img class="imagenVieja" v-if="imagen && !imagenSeleccionada" :src="'https://www.pythonanywhere.com/user/eosuna85/files/home/eosuna85/mysite/static/imagenes/' + imagen"
-                    alt="Imagen del auto" style="max-width: 200px;">
+                <img class="imagenVieja" v-if="imagen && !imagenSeleccionada" :src="'https://www.pythonanywhere.com/user/eosuna85/files/home/eosuna85/mysite/static/imagenes/' + imagen" alt="Imagen del auto" style="max-width: 200px;">
 
                 <!-- Vista previa de la nueva imagen seleccionada -->
                 <img class="imagenNueva" v-if="imagenSeleccionada" :src="imagenUrlTemp" alt="Vista previa de la nueva imagen"
