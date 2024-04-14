@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="./static/img/CG.ico">
+</head>
+
+<body class="background">
+    <header class="content">
+        <p class="nombre">Clásicos Garage</p>
+        <img class="logo" src="./static/img/Logo.png" alt="Logo">
+    </header>
+    <main class="content container estilo_main">
+        <aside>
+            <form class="form_login" id="form_login" action="">
+                <div>
+                    <p class="form_login_nombre">Login</p>
+                </div>
+                <div class="form_login_input" id="usuario"><!--+ usuario -->
+                    <label class="form_login_input" for="usuario"></label>
+                    <input class="form_login_input_estilo" type="usuario" name="nombre" id="usuario" required placeholder="Usuario">
+                </div>
+                <div class="form_login_input" id="password"><!-- Password -->
+                    <label class="form_login_input" id="password" for="password"></label>
+                    <input class="form_login_input_estilo" type="password" name="password" id="password" required
+                        placeholder="Contraseña">
+                </div>
+                <div class="form_login_input"><!-- Sumbit -->
+                    <button class="form_login_boton" type="submit">Ingresar</button>
+                </div>
+            </form>
+        </aside>
+        <section class="eslogan_login">
+            <p class="eslogan_login_estilo">"Clásicos Garage: Más que Autos, <br> Historias que Ruedan."</p>
+        </section>
+    </main>
+    <footer class="content">
+        <p class="copyright">© 2023 - Web Design - Todos los derechos reservados</p>
+    </footer>
+    <script src="./login.js"></script>
+</body>
+
+</html>

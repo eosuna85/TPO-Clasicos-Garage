@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Autos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="./static/img/CG.ico">
+</head>
+
+<body class="background">
+    <header class="content">
+        <p class="nombre">Clásicos Garage</p>
+        <img class="logo" src="./static/img/Logo.png" alt="Logo">
+    </header>
+    <main class="content container main_list">
+        <h1 class="main_index_titulo">Listado de Autos en Stock</h1>
+        <table> <!-- Se crea una tabla para mostrar los productos. -->
+            <thead> <!--Encabezado de la tabla con columnas para código, descripción, cantidad, precio y acciones.-->
+                <tr>
+                    <th>Código</th>
+                    <th>Marca</th>
+                    <th>Cantidad</th>
+                    <th>Precio$</th>
+                    <th>Imagen</th>
+                    <th>Modelo</th>
+                    <th>Año</th>
+                    <th>Kilometraje</th>
+                    <th>Motor</th>
+                    <th>Transmisión</th>
+                </tr>
+            </thead>
+            <tbody id="tablaAutos"> </tbody>
+        </table>
+        <div>
+            <a class="form_mod1_boton container_boton" href="index.html">Menu principal</a>
+        </div>
+    </main>
+    <footer class="content">
+        <p class="copyright">© 2023 - Web Design - Todos los derechos reservados</p>
+    </footer>
+    <script src="./listado.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Autos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="./static/img/CG.ico">
+</head>
+
+<body class="background">
+    <header class="content">
+        <p class="nombre">Clásicos Garage</p>
+        <img class="logo" src="./static/img/Logo.png" alt="Logo">
+    </header>
+    <main class="content container">
+        <div class="main_alta">
+            <h1 class="main_index_titulo">Agregar Autos al Inventario</h1>
+            <!--enctype="multipart/form-data" es necesario para enviar archivos al back.-->
+            <form class="form_alta" id="formulario" enctype="multipart/form-data">
+                <div class="form_alta_estilo">
+                    <section class="form_alta_seccion">
+                        <div class="form_alta_item">
+                            <label class="form_alta_texto" for="codigo">Código:</label>
+                            <input class="fomr_alta_input" type="text" id="codigo" name="codigo" required>
+                        </div>
+                        <div class="form_alta_item">
+                            <label class="form_alta_texto" for="marca">Marca:</label>
+                            <input class="fomr_alta_input" type="text" id="marca" name="marca" required>
+                        </div>
+                    </section>
+                    <section class="form_alta_seccion">
+                        <div class="form_alta_item">
+                            <label class="form_alta_texto" for="cantidad">Cantidad:</label>
+                            <input class="fomr_alta_input" type="number" id="cantidad" name="cantidad" required>
+                        </div>
+                        <div class="form_alta_item">
+                            <label class="form_alta_texto" for="precio">Precio$:</label>
+                            <input class="fomr_alta_input" type="number" id="precio" name="precio" required>
+                        </div>
+                    </section>
+                    <section class="form_alta_seccion">
+                        <div class="form_alta_item">
+                            <label class="form_alta_texto" for="modeloAuto">Modelo:</label>
+                            <input class="fomr_alta_input" type="text" id="modeloAuto" name="modelo" required>
+                        </div>
+                        <div class="form_alta_item">
+                            <label class="form_alta_texto" for="anio">Año:</label>
+                            <input class="fomr_alta_input" type="number" id="anio" name="anio" required>
+                        </div>
+                    </section>
+                    <section class="form_alta_seccion">
+                        <div class="form_alta_item">
+                            <label class="form_alta_texto" for="motor">Motor:</label>
+                            <input class="fomr_alta_input" type="text" id="motor" name="motor" required>
+                        </div>
+                        <div class="form_alta_item">
+                            <label class="form_alta_texto" for="transmision">Transmisión:</label>
+                            <input class="fomr_alta_input" type="text" id="transmision" name="transmision" required>
+                        </div>
+                    </section>
+                </div>
+                <section class="form_alta_seccion">
+                    <div class="form_alta_item">
+                        <label class="form_alta_texto" for="km">Kilometraje:</label>
+                        <input class="form_alta_input2" type="number" id="km" name="km" required>
+                    </div>
+                    <div class="form_alta_item">
+                        <label class="form_alta_texto" for="imagenAuto">Imagen del Auto:</label>
+                        <input class="form_alta_input3" type="file" id="imagenAuto" name="imagen" required>
+                    </div>
+                </section>
+                <section class="form_alta_botones">
+                    <button class="form_alta_boton" type="submit">Agregar Producto</button>
+                    <a class="form_alta_boton" href="index.html">Menu principal</a>
+                </section>
+            </form>
+        </div>
+    </main>
+    <footer class="content">
+        <p class="copyright">© 2023 - Web Design - Todos los derechos reservados</p>
+    </footer>
+    <script src="./altas.js"></script>
+</body>
+
+</html>

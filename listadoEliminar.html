@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baja de Autos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="./static/img/CG.ico">
+</head>
+
+<body class="background">
+    <header class="content">
+        <p class="nombre">Clásicos Garage</p>
+        <img class="logo" src="./static/img/Logo.png" alt="Logo">
+    </header>
+    <main class="content container main_list">
+        <h1 class="main_index_titulo">Baja de Autos del Stock</h1>
+        <table> <!-- Se crea una tabla para mostrar los productos. -->
+            <thead> <!--Encabezado de la tabla con columnas para código, descripción, cantidad, precio y acciones.-->
+                <tr>
+                    <th>Código</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Año</th>
+                    <th>Cantidad</th>
+                    <th>Precio$</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Se utiliza la directiva v-for de Vue.js para iterar sobre el array de productos (productos) y crear una fila por cada producto. -->
+                <tr v-for="auto in autos">
+                    <td>{{ auto.codigo }}</td>
+                    <td>{{ auto.marca }}</td>
+                    <td>{{ auto.modelo }}</td>
+                    <td>{{ auto.anio }}</td>
+                    <td>{{ auto.cantidad }}</td>
+                    <td>{{ auto.precio }}</td>
+                    <!-- Se agrega un botón dentro de cada fila que, cuando se hace clic, activa la función eliminarProducto de Vue.js, pasando como argumento el código del producto. -->
+                    <td><button class="form_elim_boton" @click="eliminarAuto(auto.codigo)">Eliminar</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <a class="form_mod1_boton container_boton" href="index.html">Menu principal</a>
+        </div>
+    </main>
+    <footer class="content">
+        <p class="copyright">© 2023 - Web Design - Todos los derechos reservados</p>
+    </footer>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="./listadoEliminar.js"></script>
+</body>
+
+</html>
